@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | S.K VISA - Consultancy & Travel Solutions</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="icon" type="image/png" href="sk-logo.png" />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <style></style>
+  <body>
+    <!-- Header -->
+    <header class="header" data-aos="fade-up">
+      <div class="container">
+        <div class="header-content">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="index.html">
+              <img src="sk-logo.png" alt="S.K VISA Logo" class="logo-image"
+            /></a>
+          </div>
+
+          <!-- Navigation -->
+          <nav class="nav-menu nav-menu-contact">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="index.html">HOME</a></li>
+              <li class="nav-item dropdown">
+                <a href="services.html" class="dropdown-toggle"
+                  >SERVICES <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="services.html">Visa Documentation</a></li>
+                  <li><a href="services.html">Visa Consultancy</a></li>
+                  <li><a href="services.html">Travel Itinerary Planning</a></li>
+                  <li><a href="services.html">Emergency Support</a></li>
+                  <li><a href="services.html">Ticket Booking</a></li>
+                  <li><a href="services.html">Travel Insurance Guidance</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="faqs.html">FAQ</a></li>
+              <li class="nav-item active"><a href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+
+          <!-- Call Now Section -->
+          <div class="contact-info">
+            <div class="call-now">
+              <div class="phone-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="phone-details">
+                <span class="call-text">Call Now</span>
+                <span class="phone-number">123456789</span>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-primary">ENQUIRE NOW</a>
+          </div>
+
+          <!-- Mobile Menu Toggle -->
+          <div class="mobile-toggle">
+            <button class="mobile-toggle" aria-label="Toggle mobile menu">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="contact-banner" data-aos="fade-up">
+      <div class="banner-overlay"></div>
+      <div class="airplane-icon">
+        <i class="fas fa-plane"></i>
+      </div>
+      <div class="container">
+        <h1 class="banner-title">Contact</h1>
+        <div class="breadcrumb">
+          <a href="/" class="breadcrumb-link">Home</a>
+          <span class="breadcrumb-separator">></span>
+          <span class="breadcrumb-current">Contact</span>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section" data-aos="fade-up">
+      <div class="contact-container">
+        <!-- Left Column - Contact Form -->
+        <div class="contact-form" id="contact">
+          <span class="section-label">SEND US EMAIL</span>
+          <h2 class="section-title">Enquire now</h2>
+
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Replace with your Access Key -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="YOUR_ACCESS_KEY_HERE"
+            />
+
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <span class="error-message">This field is required.</span>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email address"
+                required
+              />
+              <span class="error-message">This field is required.</span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <input
+                  type="tel"
+                  id="mobile"
+                  name="mobile"
+                  placeholder="Mobile Number"
+                />
+              </div>
+
+              <div class="form-group">
+                <select id="services" name="services">
+                  <option value="" disabled selected>Select Services</option>
+                  <option value="visa">Visa Services</option>
+                  <option value="documentation">Documentation</option>
+                  <option value="travel">Travel Planning</option>
+                  <option value="insurance">Travel Insurance</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Type your message..."
+                rows="4"
+                required
+              ></textarea>
+              <span class="error-message">This field is required.</span>
+            </div>
+
+            <div class="form-group">
+              <div class="file-upload">
+                <label for="documents">Upload Documents</label>
+                <input
+                  type="file"
+                  id="documents"
+                  name="documents"
+                  accept=".jpg,.pdf,.doc,.docx"
+                />
+                <span class="file-info"
+                  >(JPG, PDF, DOC, DOCX) Not more than 20 MB</span
+                >
+              </div>
+            </div>
+
+            <!-- Honeypot Spam Protection -->
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
+
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+
+        <!-- Right Column - Contact Info -->
+        <div class="contact-info-contact">
+          <div class="contact-info-heading">
+            <span class="section-label">NEED ANY HELP?</span>
+            <h2 class="section-title">Get in touch with us</h2>
+          </div>
+
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info-content">
+                <h3>Phone Number</h3>
+                <p><a href="tel:9022095761">90220 95761</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h3>Email Address</h3>
+                <p>
+                  <a href="mailto:info@skvisaconsultancy.com"
+                    >info@skvisaconsultancy.com</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="info-content">
+                <h3>Working Hours</h3>
+                <p>Mon - Sat: 10 am - 6pm</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3>Address (Appoitment only)</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus ipsa! Pariatur dicta atque placeat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer" data-aos="fade-up">
+      <div class="container container-contact">
+        <div class="footer-content">
+          <!-- Company Info -->
+          <div class="footer-company">
+            <img src="sk-logo.png" alt="SK VISA" class="footer-logo" />
+            <p class="company-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus ipsa! Pariatur dicta atque placeat.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="faqs.html">Faq</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="footer-services">
+            <h3>Services</h3>
+            <ul>
+              <li>Visa Consultancy</li>
+              <li>Visa Documentation</li>
+              <li>Passport Assistance</li>
+              <li>Travel Itinerary Planning</li>
+              <li>Ticket Booking</li>
+              <li>Hotel Booking</li>
+              <li>Emergency Support</li>
+              <li>Travel Insurance Guidance</li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+123456789">+123456789</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@S.Kvisaconsultancy.com"
+                  >info@S.Kvisaconsultancy.com</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-location-dot"></i>
+                <address>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus ipsa! Pariatur dicta atque placeat.
+                </address>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Mon - Sat: 10 am - 6pm</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; S.K Visa Consultancy & Travel Solutions.</p>
+        </div>
+      </div>
+
+      <!-- Back to Top Button -->
+      <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+
+      <!-- WhatsApp Button -->
+      <a href="#" class="whatsapp-btn" aria-label="Contact on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </footer>
+   
+  </body>
+  <script src="contact.js"></script>
+</html>

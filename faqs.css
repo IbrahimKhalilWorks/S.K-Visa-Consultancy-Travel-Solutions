@@ -1,0 +1,272 @@
+.faqs-banner {
+  position: relative;
+  min-height: 300px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    #673ab7 50%,
+    #e91e63 100%
+  );
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 0
+  );
+  background-size: 20px 20px;
+  opacity: 0.3;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.airplane-icon {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 58px;
+}
+
+.banner-title {
+  color: var(--text-light);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-light);
+}
+
+.breadcrumb-link {
+  color: var(--text-light);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+  opacity: 1;
+}
+
+.breadcrumb-separator {
+  opacity: 0.8;
+}
+
+.breadcrumb-current {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .faqs-banner {
+    min-height: 200px;
+  }
+
+  .banner-title {
+    font-size: 36px;
+  }
+
+  .airplane-icon {
+    top: 20px;
+    left: 20px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-title {
+    font-size: 28px;
+  }
+
+  .airplane-icon {
+    font-size: 24px;
+  }
+}
+
+/* FAQ Section Styles */
+.faq-section {
+  padding: 60px 0;
+  background-color: var(--bg-light);
+}
+
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* FAQ Item */
+.faq-item {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+/* FAQ Question Button */
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 24px 32px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Question Number */
+.faq-number {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-right: 12px;
+  min-width: 25px;
+}
+
+/* Question Text */
+.faq-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-dark);
+  flex-grow: 1;
+  padding-right: 40px;
+}
+
+/* Toggle Icon */
+.faq-icon {
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+
+.faq-icon::before,
+.faq-icon::after {
+  content: "";
+  position: absolute;
+  background-color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+.faq-icon::before {
+  top: 11px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+}
+
+.faq-icon::after {
+  top: 0;
+  left: 11px;
+  width: 2px;
+  height: 24px;
+}
+
+/* Answer Container */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+  padding: 0 32px 24px;
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Active State */
+.faq-item.active {
+  /* background: linear-gradient(-90deg, #0095ff 0%, #ff0099 100%); */
+  background-color: var(--primary-color);
+}
+
+.faq-item.active .faq-question {
+  background: transparent;
+}
+
+.faq-item.active .faq-number,
+.faq-item.active .faq-text {
+  color: #ffffff;
+}
+
+.faq-item.active .faq-icon::before,
+.faq-item.active .faq-icon::after {
+  background-color: #ffffff;
+}
+
+.faq-item.active .faq-icon::after {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+}
+
+.faq-item.active .faq-answer p {
+    color: var(--text-dark);
+    background: var(--bg-muted);
+}
+
+/* Hover Effects */
+.faq-item:not(.active):hover {
+  background-color: #f0f0f0;
+}
+.container-faqs { 
+    text-align: start;
+}
+
+.nav-menu-faqs { 
+    text-align: start;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .faq-question {
+    padding: 20px 24px;
+  }
+
+  .faq-number {
+    font-size: 16px;
+    margin-right: 0px;
+  }
+
+  .faq-text {
+    font-size: 16px;
+    padding-right: 32px;
+  }
+
+  .faq-icon {
+    right: 24px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .faq-answer p {
+    padding: 0 24px 20px;
+    font-size: 14px;
+  }
+}
